@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Qiusheng Wu <giswqs@gmail.com>
+* `Qiusheng Wu <https://github.com/giswqs>`__
 
 Contributors
 ------------
