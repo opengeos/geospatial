@@ -13,13 +13,6 @@ geospatial
         :target: https://geospatial.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-
-.. image:: https://pyup.io/repos/github/giswqs/geospatial/shield.svg
-     :target: https://pyup.io/repos/github/giswqs/geospatial/
-     :alt: Updates
-
-
-
 A Python package for geospatial analysis.
 
 
