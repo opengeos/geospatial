@@ -1,2 +1,2 @@
 xarray
-geemap
+geemap==0.6.11
