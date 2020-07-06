@@ -1,2 +1,4 @@
-xarray
 geemap
+xarray
+xarray-leaflet
+xarray-spatial
