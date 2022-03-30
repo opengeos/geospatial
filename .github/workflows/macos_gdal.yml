@@ -29,13 +29,13 @@ jobs:
         - name: Test GDAL installation
           run: |
             gdalinfo --version
-        - name: Install cartopy
-          run: |
-            brew install proj geos
-            pip3 install shapely --no-binary shapely
-            brew install pkg-config
-            export PKG_CONFIG_PATH=/usr/local/bin/pkgconfig
-            pip3 install cartopy  
+        # - name: Install cartopy
+        #   run: |
+        #     brew install proj geos
+        #     pip3 install shapely --no-binary shapely
+        #     brew install pkg-config
+        #     export PKG_CONFIG_PATH=/usr/local/bin/pkgconfig
+        #     pip3 install cartopy  
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
