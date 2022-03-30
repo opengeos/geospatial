@@ -1,3 +1,6 @@
+black
+black[jupyter]
+codespell
 bump2version
 coverage
 flake8

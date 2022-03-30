@@ -1,6 +1,20 @@
-# --find-links https://girder.github.io/large_image_wheels GDAL
-geopandas; platform_system != "Windows" 
+datapane
+geopandas
 geemap
+keplergl
+ipygany
+ipyvtklink
+laspy
 leafmap
 localtileserver
-xarray
+netcdf4
+osmnx
+panel
+psycopg2
+pydeck
+pyntcloud
+pyvista
+rio-cogeo
+rioxarray
+sqlalchemy
+streamlit-folium
