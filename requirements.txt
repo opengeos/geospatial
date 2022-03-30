@@ -1,3 +1,6 @@
+--find-links https://girder.github.io/large_image_wheels GDAL
+geopandas; platform_system != "Windows" 
 geemap
 leafmap
+localtileserver
 xarray
