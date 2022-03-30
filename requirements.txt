@@ -1,9 +1,9 @@
 datapane
-geopandas
 geemap
-keplergl
+geopandas; platform_system != "Windows"
 ipygany
 ipyvtklink
+keplergl
 laspy
 leafmap
 localtileserver
