@@ -1,3 +1,4 @@
+cartopy
 datapane
 geemap
 geopandas
@@ -14,8 +15,10 @@ panel
 psycopg2
 pydeck
 pyntcloud
+pysal
 pyvista
 rio-cogeo
 rioxarray
 sqlalchemy
 streamlit-folium
+xarray-spatial
