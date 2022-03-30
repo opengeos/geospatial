@@ -1,6 +1,6 @@
 datapane
 geemap
-geopandas; platform_system != "Windows"
+geopandas
 ipygany
 ipyvtklink
 keplergl
@@ -9,7 +9,7 @@ leafmap
 localtileserver
 netcdf4
 osmnx
-rasterio; platform_system != "Windows"
+rasterio
 panel
 psycopg2
 pydeck

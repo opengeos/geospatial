@@ -25,6 +25,7 @@ jobs:
           gdalinfo --version
       - name: Install dependencies
         run: |
+          export GDAL_VERSION=3.4.0
           python -m pip install --upgrade pip
           pip install --no-cache-dir Cython
           pip install -r codespell requirements.txt
