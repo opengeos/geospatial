@@ -25,10 +25,17 @@ jobs:
             GDAL_VER=$(find /usr/local/Cellar/gdal/  -name "lib" | awk -F"/" '{print $7}')
             GDAL_LDPATH=/usr/local/Cellar/gdal/$GDAL_VER/lib/
             export LIBRARY_PATH=$GDAL_LDPATH
-            echo $LIBRARY_PATH
+            echo $LIBRARY_PATH            
         - name: Test GDAL installation
           run: |
             gdalinfo --version
+        - name: Install cartopy
+          run: |
+            brew install proj geos
+            pip3 install shapely --no-binary shapely
+            brew install pkg-config
+            export PKG_CONFIG_PATH=/usr/local/bin/pkgconfig
+            pip3 install cartopy  
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
