@@ -1,27 +1,24 @@
 #!/usr/bin/env python
 
 """The setup script."""
-import os, platform
-from os import path as op
+
 import io
+from os import path as op
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
 
 here = op.abspath(op.dirname(__file__))
 
 # get the dependencies and installs
-with io.open(op.join(here, 'requirements.txt'), encoding='utf-8') as f:
-    all_reqs = f.read().split('\n')
+with io.open(op.join(here, "requirements.txt"), encoding="utf-8") as f:
+    all_reqs = f.read().split("\n")
 
-install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
-dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' not in x]
+install_requires = [x.strip() for x in all_reqs if "git+" not in x]
+dependency_links = [x.strip().replace("git+", "") for x in all_reqs if "git+" not in x]
 
-requirements = ['Click>=7.0', ]
+requirements = [ ]
 
 setup_requirements = [ ]
 
@@ -42,16 +39,12 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="A Python package for geospatial analysis.",
-    entry_points={
-        'console_scripts': [
-            'geospatial=geospatial.cli:main',
-        ],
-    },
+    description="A Python package for geosptial analysis and data visualization.",
     install_requires=install_requires,
     dependency_links=dependency_links,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
+    long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='geospatial',
     name='geospatial',

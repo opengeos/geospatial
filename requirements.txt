@@ -1,4 +1,3 @@
 geemap
+leafmap
 xarray
-xarray-leaflet
-xarray-spatial
