@@ -9,6 +9,7 @@ leafmap
 localtileserver
 netcdf4
 osmnx
+rasterio; platform_system != "Windows"
 panel
 psycopg2
 pydeck
