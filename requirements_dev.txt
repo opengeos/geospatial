@@ -1,3 +1,5 @@
+black
+codespell
 pip
 bump2version
 wheel
