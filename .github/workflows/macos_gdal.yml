@@ -1,0 +1,46 @@
+on:
+    push:
+        branches:
+            - master
+    pull_request:
+        branches:
+            - master
+
+name: macOS build with GDAL
+jobs:
+  test-macOS:
+    runs-on: macos-latest
+    steps:   
+        - uses: actions/checkout@v2
+          with:
+            submodules: recursive
+        - name: Set up Python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.9
+        - name: Install GDAL
+          run: brew install gdal
+        - name: Set up GDAL
+          run: |
+            GDAL_VER=$(find /usr/local/Cellar/gdal/  -name "lib" | awk -F"/" '{print $7}')
+            GDAL_LDPATH=/usr/local/Cellar/gdal/$GDAL_VER/lib/
+            export LIBRARY_PATH=$GDAL_LDPATH
+            echo $LIBRARY_PATH
+        - name: Test GDAL installation
+          run: |
+            gdalinfo --version
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install --no-cache-dir Cython
+            pip install -r requirements.txt -r requirements_dev.txt
+            pip install .
+        - name: Discover typos with codespell
+          run: codespell --skip="*.csv,*.geojson,*.json,*.js,*.html,*cff" --ignore-words-list="aci,acount,acounts,fallow,hart,hist,nd,ned,ois,wqs,watermask"
+        - name: PKG-TEST
+          run: |
+              python -m unittest discover tests/
+          env:
+              HEREMAPS_API_KEY: ${{ secrets.HEREMAPS_API_KEY }}
+              PLANET_API_KEY: ${{ secrets.PLANET_API_KEY }}
+              EARTHENGINE_TOKEN: ${{ secrets.EARTHENGINE_TOKEN }}
