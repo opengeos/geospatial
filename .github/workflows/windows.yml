@@ -19,8 +19,9 @@ jobs:
           python-version: 3.9
       - name: Install GDAL
         run: |
-          conda install geopandas --yes
-          conda install -c conda-forge gdal=3.4.0 rasterio --yes
+          conda install mamba --yes
+          mamba install geopandas --yes
+          mamba install -c conda-forge gdal=3.4.0 rasterio --yes
       - name: Test GDAL installation
         run: |
           python -c "from osgeo import gdal"
