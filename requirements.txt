@@ -1,4 +1,3 @@
-datapane
 geemap
 geopandas
 ipygany
