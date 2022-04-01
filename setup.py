@@ -27,7 +27,7 @@ test_requirements = [ ]
 setup(
     author="Qiusheng Wu",
     author_email='giswqs@gmail.com',
-    python_requires='>=3.5',
+    python_requires='>=3.7',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
