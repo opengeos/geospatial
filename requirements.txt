@@ -13,7 +13,6 @@ panel
 psycopg2
 pydeck
 pyntcloud
-pysal
 pyvista
 rio-cogeo
 rioxarray
