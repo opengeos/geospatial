@@ -1,2 +1,4 @@
 black
 codespell
+geemap
+leafmap
