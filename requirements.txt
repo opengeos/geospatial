@@ -1,8 +1,10 @@
+geemap
 geopandas
 ipygany
 ipyvtklink
 keplergl
 laspy
+leafmap
 localtileserver
 netcdf4
 osmnx
