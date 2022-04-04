@@ -23,9 +23,9 @@ plugins:
     - git-revision-date
     - mkdocs-jupyter:
           include_source: True
-          execute: True
           ignore_h1_titles: True
-          #   execute_ignore: "*.ipynb"
+        #   execute: True
+        #   execute_ignore: "*.ipynb"
 
 markdown_extensions:
     - attr_list
@@ -43,12 +43,11 @@ markdown_extensions:
 nav:
     - Home: index.md
     - Installation: installation.md
+    - List of packages: examples/packages.ipynb
     - Usage: usage.md
     - Contributing: contributing.md
-    - FAQ: faq.md
+    # - FAQ: faq.md
     - Changelog: changelog.md
     - Report Issues: https://github.com/giswqs/geospatial/issues
     - API Reference:
           - geospatial module: geospatial.md
-    - Notebooks:
-          - examples/packages.ipynb
