@@ -32,7 +32,7 @@ jobs:
                   conda install -c conda-forge mamba --yes
                   mamba install -c conda-forge geospatial --yes
                   pip install markupsafe==2.0.1
-                  pip install -U requests
+                  pip install -U requests jinja2
 
             # - name: Install dependencies
             #   run: |
