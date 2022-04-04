@@ -28,6 +28,7 @@ jobs:
                   python-version: 3.9
             - name: Install geospatial
               run: |
+                  pip install -r requirements_docs.txt
                   conda install -c conda-forge mamba --yes
                   mamba install -c conda-forge geospatial --yes
             # - name: Install dependencies
@@ -44,7 +45,7 @@ jobs:
             #       python -m unittest discover tests/
             #   env:
             #       PLANET_API_KEY: ${{ secrets.PLANET_API_KEY }}
-            - run: pip install -r requirements_docs.txt
+            # - run: pip install -r requirements_docs.txt
             - run: mkdocs gh-deploy --force
               # env:
               #     USE_FOLIUM: ${{ secrets.USE_FOLIUM }}
