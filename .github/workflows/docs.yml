@@ -28,7 +28,6 @@ jobs:
                   python-version: 3.9
             - name: Install geospatial
               run: |
-                  pip install -r requirements_docs.txt
                   conda install -c conda-forge mamba --yes
                   mamba install -c conda-forge geospatial markupsafe==2.0.1 pygments Jinja2==3.0.0 requests mkdocs-material mkdocs-jupyter mkdocstrings mkdocs-git-revision-date-plugin --yes
 
