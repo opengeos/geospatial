@@ -41,9 +41,8 @@ markdown_extensions:
 #         property: UA-XXXXXXXXX-X
 
 nav:
-    - Home: index.md
+    - Home: index.ipynb
     - Installation: installation.md
-    - List of packages: examples/packages.ipynb
     - Usage: usage.md
     - Contributing: contributing.md
     # - FAQ: faq.md
