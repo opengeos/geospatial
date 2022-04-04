@@ -31,7 +31,9 @@ jobs:
                   pip install -r requirements_docs.txt
                   conda install -c conda-forge mamba --yes
                   mamba install -c conda-forge geospatial --yes
+                  pip install markupsafe==2.0.1
                   pip install -U requests
+
             # - name: Install dependencies
             #   run: |
             #       pip install --no-cache-dir Cython
