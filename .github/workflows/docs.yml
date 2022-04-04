@@ -7,18 +7,29 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
+            # - uses: actions/checkout@v2
+            # - uses: actions/setup-python@v2
+            #   with:
+            #       python-version: 3.9
+            # - name: Install GDAL
+            #   run: |
+            #       python -m pip install --upgrade pip
+            #       pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
+            # - name: Test GDAL installation
+            #   run: |
+            #       python -c "from osgeo import gdal"
+            #       gdalinfo --version
+
             - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
+            - name: Install miniconda
+              uses: conda-incubator/setup-miniconda@v2
               with:
+                  auto-activate-base: true
                   python-version: 3.9
-            - name: Install GDAL
+            - name: Install geospatial
               run: |
-                  python -m pip install --upgrade pip
-                  pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
-            - name: Test GDAL installation
-              run: |
-                  python -c "from osgeo import gdal"
-                  gdalinfo --version
+                  conda install mamba --yes
+                  mamba install -c conda-forge geospatial --yes
             - name: Install dependencies
               run: |
                   pip install --no-cache-dir Cython
