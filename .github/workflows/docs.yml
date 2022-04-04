@@ -30,9 +30,7 @@ jobs:
               run: |
                   pip install -r requirements_docs.txt
                   conda install -c conda-forge mamba --yes
-                  mamba install -c conda-forge geospatial --yes
-                  pip install markupsafe==2.0.1 pygments==2.11.2 Jinja2==3.1.3
-                  pip install -U requests 
+                  mamba install -c conda-forge geospatial markupsafe pygments Jinja2 requests --yes
 
             # - name: Install dependencies
             #   run: |
