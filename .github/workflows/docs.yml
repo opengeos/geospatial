@@ -28,7 +28,7 @@ jobs:
                   python-version: 3.9
             - name: Install geospatial
               run: |
-                  conda install mamba --yes
+                  conda install -c conda-forge mamba --yes
                   mamba install -c conda-forge geospatial --yes
             - name: Install dependencies
               run: |
