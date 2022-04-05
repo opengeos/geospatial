@@ -1,0 +1,6 @@
+name: geo
+channels:
+  - conda-forge
+dependencies:
+  - geospatial
+

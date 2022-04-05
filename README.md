@@ -1,5 +1,7 @@
 # geospatial
 
+[![image](https://colab.research.google.com/assets/colab-badge.svg)](https://gishub.org/geospatial-colab)
+[![image](https://mybinder.org/badge_logo.svg)](https://gishub.org/geospatial-binder)
 [![image](https://img.shields.io/pypi/v/geospatial.svg)](https://pypi.python.org/pypi/geospatial)
 [![image](https://pepy.tech/badge/geospatial)](https://pepy.tech/project/geospatial)
 [![Conda Version](https://img.shields.io/conda/vn/conda-forge/geospatial.svg)](https://anaconda.org/conda-forge/geospatial)
