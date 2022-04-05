@@ -40,7 +40,7 @@ When installing packages using the conda package manager, sometimes it can take 
 ```bash
 conda create -n geo python=3.9
 conda activate geo
-conda install mamba
+conda install -c conda-forge mamba
 mamba install geopandas
 mamba install -c conda-forge geospatial
 ```
