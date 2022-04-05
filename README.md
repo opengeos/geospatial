@@ -6,10 +6,12 @@
 [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/geospatial.svg)](https://anaconda.org/conda-forge/geospatial)
 [![Conda Recipe](https://img.shields.io/badge/recipe-geospatial-green.svg)](https://github.com/conda-forge/geospatial-feedstock)
 
-**A Python package for geosptial analysis and data visualization.**
+**A collection of Python packages for geosptial analysis and data visualization.**
 
 -   Free software: MIT license
 -   Documentation: https://geospatial.gishub.org
+
+[![](https://i.imgur.com/A4GkBLP.png)](https://geospatial.gishub.org)
 
 ## Credits
 
