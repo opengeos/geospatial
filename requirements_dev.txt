@@ -1,4 +1,3 @@
-black
+black[jupyter]
+bump2version
 codespell
-geemap
-leafmap

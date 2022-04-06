@@ -1,13 +1,10 @@
 # --find-links https://girder.github.io/large_image_wheels GDAL
-black[jupyter]
-bump2version
-codespell
 # cartopy; platform_platform != "Windows"
 dask-geopandas
 datashader
 earthengine-api
 earthpy
-easystac
+easystac; python_version > '3.7'
 eemont
 # eomaps
 geemap
@@ -53,7 +50,7 @@ sentinelsat
 shapely
 spyndex
 sqlalchemy
-stackstac
+stackstac; python_version > '3.7'
 streamlit-folium
 voila
 xarray-spatial
