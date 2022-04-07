@@ -4,7 +4,7 @@ The geospatial package has many dependencies, such as [GeoPandas](https://geopan
 
 ## Video Tutorial
 
-[![Introducing geospatial](https://img.youtube.com/vi/Y1xB7d2VbFY/0.jpg)](https://youtu.be/Y1xB7d2VbFY "Introducing geospatial")
+[![Introducing geospatial](images/thumbnail.png)](https://youtu.be/Y1xB7d2VbFY "Introducing geospatial")
 
 ## Installing with Anaconda/Miniconda
 
