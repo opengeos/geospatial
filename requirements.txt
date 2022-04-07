@@ -27,6 +27,7 @@ mapboxgl
 # movingpandas
 mss
 netcdf4
+odc-stac
 osmnx
 owslib
 panel
