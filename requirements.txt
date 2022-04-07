@@ -37,6 +37,7 @@ proplot
 psycopg2
 pydeck
 pyntcloud
+pysal
 pyvista
 radiant-mlhub
 rasterio
