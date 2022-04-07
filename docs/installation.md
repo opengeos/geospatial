@@ -2,6 +2,10 @@
 
 The geospatial package has many dependencies, such as [GeoPandas](https://geopandas.org) and [localtileserver](https://github.com/banesullivan/localtileserver). These optional dependencies can sometimes be a challenge to install, especially on Windows. Therefore, we advise you to closely follow the recommendations below to avoid installation problems.
 
+## Video Tutorial
+
+[![Introducing geospatial](https://img.youtube.com/vi/Y1xB7d2VbFY/0.jpg)](https://youtu.be/Y1xB7d2VbFY "Introducing geospatial")
+
 ## Installing with Anaconda/Miniconda
 
 To install geospatial and all its dependencies, we recommend you use the [conda](https://conda.io/en/latest) package manager. This can be obtained by installing the [Anaconda Distribution](https://www.anaconda.com/distribution) (a free Python distribution for data science), or through [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (minimal distribution only containing Python and the conda package manager). See also the [installation docs](https://conda.io/docs/user-guide/install/download.html) for more information on how to install Anaconda or Miniconda locally.
