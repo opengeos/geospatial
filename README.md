@@ -7,6 +7,8 @@
 [![Conda Version](https://img.shields.io/conda/vn/conda-forge/geospatial.svg)](https://anaconda.org/conda-forge/geospatial)
 [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/geospatial.svg)](https://anaconda.org/conda-forge/geospatial)
 [![Conda Recipe](https://img.shields.io/badge/recipe-geospatial-green.svg)](https://github.com/conda-forge/geospatial-feedstock)
+[![image](https://img.shields.io/badge/YouTube-Channel-red)](https://www.youtube.com/c/QiushengWu)
+[![image](https://img.shields.io/twitter/follow/giswqs?style=social)](https://twitter.com/giswqs)
 
 **A collection of Python packages for geosptial analysis and data visualization.**
 
