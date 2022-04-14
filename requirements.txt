@@ -21,6 +21,7 @@ ipygany
 ipyleaflet
 ipynb-py-convert
 ipyvtklink
+jupytext
 keplergl
 laspy
 leafmap
