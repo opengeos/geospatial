@@ -11,6 +11,7 @@ eemont
 geemap
 gemgis
 geoalchemy2
+geocube
 geopandas
 # geoviews
 h3
