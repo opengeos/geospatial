@@ -1,6 +1,7 @@
 # --find-links https://girder.github.io/large_image_wheels GDAL
 # cartopy; platform_platform != "Windows"
 cenpy
+contextily
 dask-geopandas
 datashader
 earthengine-api
@@ -54,6 +55,7 @@ sarpy
 satpy
 sentinelsat
 shapely
+sliderule
 spyndex
 sqlalchemy
 stackstac; python_version > '3.7'
