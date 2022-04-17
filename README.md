@@ -10,7 +10,7 @@
 [![image](https://img.shields.io/badge/YouTube-Channel-red)](https://www.youtube.com/c/QiushengWu)
 [![image](https://img.shields.io/twitter/follow/giswqs?style=social)](https://twitter.com/giswqs)
 
-**A collection of Python packages for geosptial analysis and data visualization.**
+**A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.**
 
 -   Free software: MIT license
 -   Documentation: https://geospatial.gishub.org

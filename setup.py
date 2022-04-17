@@ -37,7 +37,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    description="A Python package for geosptial analysis and data visualization.",
+    description="A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.",
     install_requires=install_requires,
     dependency_links=dependency_links,
     license="MIT license",
