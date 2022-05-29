@@ -20,3 +20,5 @@ mkdocs-jupyter
 mkdocs-material 
 mkdocs-pdf-export-plugin
 mkdocstrings 
+mkdocstrings-crystal
+mkdocstrings-python-legacy
