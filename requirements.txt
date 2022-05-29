@@ -9,7 +9,8 @@ earthpy
 easystac; python_version > '3.7'
 eemont
 # eomaps
-geemap
+folium>=0.12.1
+geemap>=0.13.7
 gemgis
 geoalchemy2
 geocube
@@ -17,7 +18,6 @@ geopandas
 # geoviews
 h3
 here-map-widget-for-jupyter
-httplib2shim
 hvplot
 ipygany
 ipyleaflet
@@ -26,8 +26,9 @@ ipyvtklink
 jupytext
 keplergl
 laspy
-leafmap
-localtileserver
+leafmap>=0.9.3
+# lidar
+localtileserver>=0.5.8
 mapboxgl
 # movingpandas
 mss
@@ -53,6 +54,7 @@ rioxarray
 s2cloudless
 sarpy
 satpy
+scholarpy
 sentinelsat
 shapely
 sliderule
