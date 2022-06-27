@@ -44,6 +44,7 @@ plotly
 proplot
 psycopg2
 pydeck
+pygis>=0.3.1
 pyntcloud
 # pysal
 pyvista
