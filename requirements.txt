@@ -64,6 +64,7 @@ spyndex
 sqlalchemy
 stackstac; python_version > '3.7'
 streamlit-folium
+# tropycal
 voila
 xarray-spatial
 # xmovie

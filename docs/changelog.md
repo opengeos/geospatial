@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.6.1 - Jun 27, 2022
+
+Added the folloowing packages:
+
+-   pygis
+-   tropycal
+
 ## v0.5.6 - Apr 16, 2022
 
 Added the folloowing packages:
