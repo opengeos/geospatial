@@ -9,6 +9,7 @@ earthpy
 easystac; python_version > '3.7'
 eemont
 # eomaps
+eoreader
 folium>=0.12.1
 geemap>=0.13.7
 gemgis
