@@ -1,5 +1,6 @@
 # --find-links https://girder.github.io/large_image_wheels GDAL
 # cartopy; platform_platform != "Windows"
+bokeh
 cenpy
 contextily
 dask-geopandas
@@ -23,9 +24,7 @@ here-map-widget-for-jupyter
 hvplot
 ipygany
 ipyleaflet
-ipynb-py-convert
 ipyvtklink
-jupytext
 keplergl
 laspy
 leafmap>=0.9.3
@@ -48,7 +47,7 @@ pydeck
 pygis>=0.3.1
 pyntcloud
 # pysal
-pyvista
+# pyvista
 radiant-mlhub
 rasterio
 rasterstats
@@ -57,16 +56,13 @@ rioxarray
 s2cloudless
 sarpy
 satpy
-scholarpy
 sentinelsat
 shapely
 sliderule
 spyndex
 sqlalchemy
 stackstac; python_version > '3.7'
-streamlit-folium
 # tropycal
-voila
 xarray-spatial
 # xmovie
 wxee
