@@ -7,7 +7,7 @@ dask-geopandas
 datashader
 earthengine-api
 earthpy
-easystac; python_version > '3.7'
+easystac
 eemont
 # eomaps
 eoreader
@@ -17,7 +17,7 @@ gemgis
 geoalchemy2
 geocube
 geopandas
-geosnap
+# geosnap
 # geoviews
 h3
 here-map-widget-for-jupyter
@@ -58,10 +58,11 @@ sarpy
 satpy
 sentinelsat
 shapely
+simplekml
 sliderule
 spyndex
 sqlalchemy
-stackstac; python_version > '3.7'
+stackstac
 # tropycal
 xarray-spatial
 # xmovie
