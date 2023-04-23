@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.7.1 - Apr 23, 2023
+
+Added simplekml and mapwidget
+
 ## v0.7.0 - Nov 29, 2022
 
 Removed some packages to make it easier to install on Colab.
