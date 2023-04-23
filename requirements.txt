@@ -17,7 +17,7 @@ gemgis
 geoalchemy2
 geocube
 geopandas
-geosnap
+# geosnap
 # geoviews
 h3
 here-map-widget-for-jupyter
