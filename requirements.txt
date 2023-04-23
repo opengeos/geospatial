@@ -31,6 +31,7 @@ leafmap>=0.9.3
 # lidar
 localtileserver>=0.5.8
 mapboxgl
+mapwidget
 # movingpandas
 mss
 netcdf4
