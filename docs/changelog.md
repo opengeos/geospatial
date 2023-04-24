@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.8.0 - Apr 24, 2023
+
+Updated GitHub actions
+
 ## v0.7.1 - Apr 23, 2023
 
 Added simplekml and mapwidget
