@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at <https://github.com/giswqs/geospatial/issues>.
+Report bugs at <https://github.com/opengeos/geospatial/issues>.
 
 If you are reporting a bug, please include:
 
@@ -36,7 +36,7 @@ in docstrings, or even on the web in blog posts, articles, and such.
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-<https://github.com/giswqs/geospatial/issues>.
+<https://github.com/opengeos/geospatial/issues>.
 
 If you are proposing a feature:
 
@@ -104,5 +104,5 @@ Before you submit a pull request, check that it meets these guidelines:
     Put your new functionality into a function with a docstring, and add
     the feature to the list in README.rst.
 3.  The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and
-    for PyPy. Check <https://github.com/giswqs/geospatial/pull_requests> and make sure that the tests pass for all
+    for PyPy. Check <https://github.com/opengeos/geospatial/pull_requests> and make sure that the tests pass for all
     supported Python versions.

@@ -1,21 +1,38 @@
 site_name: geospatial
 
-site_url: https://giswqs.github.io/geospatial
+site_url: https://opengeos.github.io/geospatial
 
-repo_url: https://github.com/giswqs/geospatial
+repo_url: https://github.com/opengeos/geospatial
 
 theme:
     palette:
-        scheme: preference
+        - scheme: default
+          #   primary: blue
+          #   accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
     name: material
     icon:
         repo: fontawesome/brands/github
+    logo: assets/logo.png
+    favicon: assets/favicon.png
     features:
         - navigation.instant
+        - navigation.tracking
+        - navigation.top
         - search.highlight
-        # - navigation.expand
-        # - navigation.tabs
+        - search.share
     custom_dir: "docs/overrides"
+    font:
+        text: Google Sans
+        code: Regular
 
 plugins:
     - search
@@ -24,7 +41,7 @@ plugins:
     - mkdocs-jupyter:
           include_source: True
           ignore_h1_titles: True
-        #   execute: True
+          execute: True
         #   execute_ignore: "*.ipynb"
 
 markdown_extensions:
@@ -47,6 +64,6 @@ nav:
     - Contributing: contributing.md
     # - FAQ: faq.md
     - Changelog: changelog.md
-    - Report Issues: https://github.com/giswqs/geospatial/issues
+    - Report Issues: https://github.com/opengeos/geospatial/issues
     - API Reference:
           - geospatial module: geospatial.md

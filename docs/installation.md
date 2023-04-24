@@ -57,14 +57,14 @@ geospatial is also available on [PyPI](https://pypi.org/project/geospatial). It 
 pip install geospatial
 ```
 
-All optional dependencies of geospatial are listed in [requirements_dev.txt](https://github.com/giswqs/geospatial/blob/master/requirements_dev.txt).
+All optional dependencies of geospatial are listed in [requirements_dev.txt](https://github.com/opengeos/geospatial/blob/master/requirements_dev.txt).
 
 ## Installing from source
 
 You may install the latest development version by cloning the GitHub repository with [Git](https://git-scm.com) and using pip to install from the local directory:
 
 ```bash
-git clone https://github.com/giswqs/geospatial.git
+git clone https://github.com/opengeos/geospatial.git
 cd geospatial
 pip install .
 ```
@@ -72,7 +72,7 @@ pip install .
 It is also possible to install the latest development version directly from the GitHub repository with:
 
 ```bash
-pip install git+https://github.com/giswqs/geospatial.git
+pip install git+https://github.com/opengeos/geospatial.git
 ```
 
 ## Upgrading geospatial
