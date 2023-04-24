@@ -3,6 +3,7 @@
 bokeh
 cenpy
 contextily
+cubo
 dask-geopandas
 datashader
 earthengine-api
@@ -12,15 +13,16 @@ eemont
 # eomaps
 eoreader
 folium>=0.12.1
+fiona
 geemap>=0.13.7
 gemgis
 geoalchemy2
 geocube
 geopandas
+geotiff
 # geosnap
 # geoviews
 h3
-here-map-widget-for-jupyter
 hvplot
 ipygany
 ipyleaflet
@@ -31,10 +33,12 @@ leafmap>=0.9.3
 # lidar
 localtileserver>=0.5.8
 mapboxgl
+mapclassify
 mapwidget
 # movingpandas
 mss
 netcdf4
+networkx
 odc-stac
 osmnx
 owslib
@@ -47,7 +51,10 @@ psycopg2
 pydeck
 pygis>=0.3.1
 pyntcloud
+pyproj
 # pysal
+pyshp
+pystac-client
 # pyvista
 radiant-mlhub
 rasterio
@@ -65,6 +72,13 @@ spyndex
 sqlalchemy
 stackstac
 # tropycal
-xarray-spatial
-# xmovie
+usgs
+whitebox
+whiteboxgui
 wxee
+xarray
+xarray_leaflet
+xarray-spatial
+# xcube; python_version >= '3.9'
+# xmovie
+xyzservices
