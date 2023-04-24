@@ -25,6 +25,9 @@ jobs:
               python-version: ${{ matrix.python-version}}
         - name: Install GDAL
           run: conda install -c conda-forge gdal --yes
+        - name: Add GDAL binaries to PATH
+          run: |
+            echo "export PATH=\$PATH:$(conda run --prefix $(which python) gdal-config --prefix)/bin" >> $HOME/.bash_profile
         - name: Test GDAL installation
           run: |
               gdalinfo --version
