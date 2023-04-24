@@ -79,6 +79,6 @@ wxee
 xarray
 xarray_leaflet
 xarray-spatial
-xcube
+xcube; python_version >= '3.9'
 # xmovie
 xyzservices
