@@ -2,5 +2,5 @@ name: geo
 channels:
   - conda-forge
 dependencies:
-  - geospatial
+  - geospatial:0.8.0
 
