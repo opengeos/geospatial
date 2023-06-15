@@ -15,7 +15,7 @@ eoreader
 folium>=0.12.1
 fiona
 geemap>=0.13.7
-gemgis
+# gemgis
 geoalchemy2
 geocube
 geopandas
