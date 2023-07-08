@@ -17,9 +17,8 @@ jobs:
       contents: read
       packages: write
     steps:
-      # - uses: actions/checkout@v3
-      # - name: Build the Docker image
-      #   run: docker build . --file Dockerfile --tag geospatial:0.8.0
+      - name: Build the Docker image
+        uses: actions/checkout@v3
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
