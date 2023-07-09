@@ -12,10 +12,10 @@ easystac
 eemont
 # eomaps
 eoreader
-folium>=0.12.1
 fiona
-geemap>=0.13.7
-gemgis
+folium>=0.12.1
+geemap>=0.24.0
+# gemgis
 geoalchemy2
 geocube
 geopandas
@@ -29,9 +29,9 @@ ipyleaflet
 ipyvtklink
 keplergl
 laspy
-leafmap>=0.9.3
+leafmap>=0.22.0
 # lidar
-localtileserver>=0.5.8
+localtileserver>=0.6.1
 mapboxgl
 mapclassify
 mapwidget
@@ -49,10 +49,10 @@ plotly
 proplot
 psycopg2
 pydeck
-pygis>=0.3.1
+pygis>=0.6.0
 pyntcloud
 pyproj
-# pysal
+pysal
 pyshp
 pystac-client
 # pyvista
