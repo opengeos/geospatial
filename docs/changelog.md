@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.0 - Jul 28, 2023
+
+-   Fixed windows build error (#34)
+-   Removed gemgis (#32)
+-   Added Dockerfile and Docker Build Image workflow (#33)
+
 ## v0.8.0 - Apr 24, 2023
 
 Updated GitHub actions
