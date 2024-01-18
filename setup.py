@@ -51,6 +51,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/opengeos/geospatial',
-    version='0.9.0',
+    version='0.10.0',
     zip_safe=False,
 )
