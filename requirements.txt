@@ -81,6 +81,7 @@ whiteboxgui
 wxee
 xarray
 xarray-spatial
+xee
 # xcube; python_version >= '3.9'
 # xmovie
 xyzservices
