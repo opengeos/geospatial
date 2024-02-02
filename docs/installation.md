@@ -75,6 +75,14 @@ It is also possible to install the latest development version directly from the 
 pip install git+https://github.com/opengeos/geospatial.git
 ```
 
+## Using Docker
+
+If you are familiar with [Docker](https://www.docker.com), you can use the following command to pull the latest geospatial image from the [GitHub Container Registry](https://github.com/opengeos/geospatial/pkgs/container/geospatial)
+
+```bash
+docker pull ghcr.io/opengeos/geospatial:latest
+```
+
 ## Upgrading geospatial
 
 If you have installed geospatial before and want to upgrade to the latest version, you can run the following command in your terminal:
