@@ -60,7 +60,7 @@ pysal
 pyshp
 pystac-client
 # pyvista
-radiant-mlhub
+# radiant-mlhub
 rasterio
 rasterstats
 rio-cogeo
