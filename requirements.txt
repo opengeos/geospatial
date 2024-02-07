@@ -50,7 +50,7 @@ panel
 palettable
 planetary-computer
 plotly
-proplot
+# proplot
 psycopg2
 pydeck
 pygis
