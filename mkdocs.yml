@@ -21,7 +21,7 @@ theme:
     name: material
     icon:
         repo: fontawesome/brands/github
-    logo: assets/logo.png
+    # logo: assets/logo.png
     favicon: assets/favicon.png
     features:
         - navigation.instant
@@ -42,7 +42,7 @@ plugins:
           include_source: True
           ignore_h1_titles: True
           execute: True
-        #   execute_ignore: "*.ipynb"
+          #   execute_ignore: "*.ipynb"
 
 markdown_extensions:
     - attr_list
