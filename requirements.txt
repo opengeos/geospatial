@@ -48,6 +48,7 @@ osmnx
 owslib
 panel
 palettable
+pdal
 planetary-computer
 plotly
 # proplot
