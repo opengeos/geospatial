@@ -6,7 +6,7 @@ import io
 from os import path as op
 from setuptools import setup, find_packages
 
-with open('README.md') as readme_file:
+with open("README.md") as readme_file:
     readme = readme_file.read()
 
 here = op.abspath(op.dirname(__file__))
@@ -26,31 +26,31 @@ test_requirements = []
 
 setup(
     author="Qiusheng Wu",
-    author_email='giswqs@gmail.com',
-    python_requires='>=3.8',
+    author_email="giswqs@gmail.com",
+    python_requires=">=3.8",
     classifiers=[
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Natural Language :: English',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11',
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
     description="A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.",
     install_requires=install_requires,
     dependency_links=dependency_links,
     license="MIT license",
     long_description=readme,
-    long_description_content_type='text/markdown',
+    long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='geospatial',
-    name='geospatial',
-    packages=find_packages(include=['geospatial', 'geospatial.*']),
+    keywords="geospatial",
+    name="geospatial",
+    packages=find_packages(include=["geospatial", "geospatial.*"]),
     setup_requires=setup_requirements,
-    test_suite='tests',
+    test_suite="tests",
     tests_require=test_requirements,
-    url='https://github.com/opengeos/geospatial',
-    version='0.10.2',
+    url="https://github.com/opengeos/geospatial",
+    version="0.10.2",
     zip_safe=False,
 )
