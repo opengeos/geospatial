@@ -26,7 +26,7 @@ jobs:
                   gdalinfo --version
             - name: Install dependencies
               run: |
-                  pip install --upgrade setuptools  
+                  pip install --upgrade setuptools
                   python -m pip install --upgrade pip
                   pip install --no-cache-dir Cython
                   pip install -r requirements.txt

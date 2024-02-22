@@ -46,8 +46,9 @@ networkx
 odc-stac
 osmnx
 owslib
-panel
 palettable
+panel
+# pdal
 planetary-computer
 plotly
 # proplot
