@@ -15,7 +15,7 @@ mkdocs-pdf-export-plugin
 mkdocstrings
 mkdocstrings-crystal
 mkdocstrings-python-legacy
-nbconvert==6.5.3
+nbconvert
 pip
 sphinx
 tox
