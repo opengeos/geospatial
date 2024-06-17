@@ -9,13 +9,13 @@ ipykernel
 livereload
 mkdocs
 mkdocs-git-revision-date-plugin
-mkdocs-jupyter
+mkdocs-jupyter>=0.24.7
 mkdocs-material
 mkdocs-pdf-export-plugin
 mkdocstrings
 mkdocstrings-crystal
 mkdocstrings-python-legacy
-nbconvert==6.5.3
+nbconvert
 pip
 sphinx
 tox

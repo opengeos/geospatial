@@ -17,7 +17,7 @@ eemont
 eoreader
 fiona
 folium
-geemap>=0.30.4
+geemap>=0.32.1
 # gemgis
 geoalchemy2
 geocube
@@ -29,15 +29,15 @@ h3
 hvplot
 ipygany
 ipyleaflet
-ipyvtklink
 keplergl
 laspy
-leafmap>=0.30.1
+leafmap>=0.33.1
 # lidar
 localtileserver
 lonboard
 mapboxgl
 mapclassify
+maplibre; python_version >= '3.9'
 mapwidget
 # movingpandas
 mss
@@ -52,7 +52,7 @@ panel
 planetary-computer
 plotly
 # proplot
-psycopg2
+# psycopg2
 pydeck
 pygis
 pyntcloud
