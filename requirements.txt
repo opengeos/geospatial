@@ -37,7 +37,7 @@ localtileserver
 lonboard
 mapboxgl
 mapclassify
-maplibre
+maplibre; python_version >= '3.9'
 mapwidget
 # movingpandas
 mss
