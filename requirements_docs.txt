@@ -9,7 +9,7 @@ ipykernel
 livereload
 mkdocs
 mkdocs-git-revision-date-plugin
-mkdocs-jupyter
+mkdocs-jupyter>=0.24.7
 mkdocs-material
 mkdocs-pdf-export-plugin
 mkdocstrings

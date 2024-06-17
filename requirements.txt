@@ -52,7 +52,7 @@ panel
 planetary-computer
 plotly
 # proplot
-psycopg2
+# psycopg2
 pydeck
 pygis
 pyntcloud
