@@ -27,6 +27,7 @@ geotiff
 # geoviews
 h3
 hvplot
+hypercoast
 ipygany
 ipyleaflet
 keplergl
