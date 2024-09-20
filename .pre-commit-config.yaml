@@ -15,13 +15,6 @@ repos:
       rev: 24.8.0
       hooks:
           - id: black-jupyter
-            language_version: python3.11
-
-    # - repo: https://github.com/codespell-project/codespell
-    #   rev: v2.2.6
-    #   hooks:
-    #       - id: codespell
-    #         args: [--toml, pyproject-codespell.precommit-toml]
 
     - repo: https://github.com/kynan/nbstripout
       rev: 0.7.1
