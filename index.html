@@ -323,18 +323,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mamba" class="md-nav__link">
+  <a href="#uv" class="md-nav__link">
     <span class="md-ellipsis">
-      Mamba
+      uv
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#uv" class="md-nav__link">
+  <a href="#mamba" class="md-nav__link">
     <span class="md-ellipsis">
-      uv
+      Mamba
     </span>
   </a>
   
@@ -598,18 +598,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mamba" class="md-nav__link">
+  <a href="#uv" class="md-nav__link">
     <span class="md-ellipsis">
-      Mamba
+      uv
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#uv" class="md-nav__link">
+  <a href="#mamba" class="md-nav__link">
     <span class="md-ellipsis">
-      uv
+      Mamba
     </span>
   </a>
   
@@ -1137,12 +1137,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <li>Documentation: <a href="https://geospatial.gishub.org">https://geospatial.gishub.org</a></li>
 </ul>
 <h2 id="disclaimer">Disclaimer<a class="anchor-link" href="#disclaimer">¶</a></h2><p>Currently, the <code>geospatial</code> package only helps you install commonly used packages for geospatial analysis and data visualization with only one command, making it easier to set up a conda environment for geospatial analysis and avoid dependency conflicts during installation. The <code>geospatial</code> package itself does not have any meaningful functions yet. After installation, you can continue to the commonly used geospatial packages as usual.</p>
-<h2 id="installation">Installation<a class="anchor-link" href="#installation">¶</a></h2><h3 id="mamba">Mamba<a class="anchor-link" href="#mamba">¶</a></h3><p>Installing commonly used packages for geospatial analysis and data visualization with only one command.</p>
-<div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>geospatial
+<h2 id="installation">Installation<a class="anchor-link" href="#installation">¶</a></h2><h3 id="uv">uv<a class="anchor-link" href="#uv">¶</a></h3><p><a href="https://docs.astral.sh/uv/">uv</a> us an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
+<div class="highlight"><pre><span></span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>geospatial
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>pyproj
 </pre></div>
-<h3 id="uv">uv<a class="anchor-link" href="#uv">¶</a></h3><p><a href="https://docs.astral.sh/uv/">uv</a> us an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
-<div class="highlight"><pre><span></span>uv<span class="w"> </span>install<span class="w"> </span>geospatial
-uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels
+<h3 id="mamba">Mamba<a class="anchor-link" href="#mamba">¶</a></h3><p>Installing commonly used packages for geospatial analysis and data visualization with only one command.</p>
+<div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>geospatial
 </pre></div>
 <h2 id="video-tutorial">Video Tutorial<a class="anchor-link" href="#video-tutorial">¶</a></h2><p><a href="https://youtu.be/t7eJKQwacOE" title="Introducing geospatial"><img alt="Introducing geospatial" src="images/thumbnail.png"/></a></p>
 </div>
@@ -1156,7 +1156,7 @@ uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </s
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="conda-forge-recipe">Conda-forge recipe<a class="anchor-link" href="#conda-forge-recipe">¶</a></h2><p>The <a href="https://github.com/conda-forge/geospatial-feedstock/blob/main/recipe/meta.yaml">recipe</a> of the geospatial Python package on the conda-forge channel:</p>
-<pre><code>- python &gt;=3.8
+<pre><code>- python &gt;=3.9
 - apache-sedona
 - bokeh
 - cartopy
@@ -1305,8 +1305,9 @@ uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </s
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Package                         Version
-------------------------------- --------------
+<pre>Package                         Version        Editable project location
+------------------------------- -------------- ---------------------------------------
+accelerate                      0.34.2
 access                          1.1.9
 aenum                           3.1.15
 affine                          2.4.0
@@ -1338,16 +1339,25 @@ beautifulsoup4                  4.12.3
 black                           24.8.0
 bleach                          6.1.0
 blinker                         1.8.2
-bokeh                           3.5.2
+blis                            0.7.11
+bokeh                           3.4.3
 boto3                           1.35.23
 botocore                        1.35.23
 bounded-pool-executor           0.0.3
 bqplot                          0.12.43
 branca                          0.7.2
 Brotli                          1.1.0
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>bs4                             0.0.2
 bump2version                    1.0.1
 cachelib                        0.9.0
 cachetools                      5.5.0
+catalogue                       2.0.10
 cenpy                           1.0.1
 certifi                         2024.8.30
 cffi                            1.17.1
@@ -1367,6 +1377,7 @@ colorcet                        3.1.0
 colorlog                        6.8.2
 colour                          0.1.5
 comm                            0.2.2
+confection                      0.1.5
 configobj                       5.0.9
 contextily                      1.6.2
 contourpy                       1.3.0
@@ -1375,9 +1386,9 @@ cryptography                    43.0.1
 cssselect2                      0.7.0
 cubo                            2024.8.0
 cycler                          0.12.1
-Cython                          3.0.11
-dask                            2024.9.0
-dask-expr                       1.1.14
+cymem                           2.0.8
+dask                            2024.8.0
+dask-expr                       1.1.10
 dask-geopandas                  0.4.1
 dataclasses-json                0.6.7
 datashader                      0.16.3
@@ -1388,7 +1399,8 @@ deprecation                     2.1.0
 dicttoxml                       1.7.16
 dill                            0.3.8
 distlib                         0.3.8
-distributed                     2024.9.0
+distributed                     2024.8.0
+docker-pycreds                  0.4.0
 docopt                          0.6.2
 docutils                        0.21.2
 donfig                          0.8.1.post1
@@ -1402,10 +1414,14 @@ ee_extra                        0.0.15
 eemont                          0.3.6
 eerepr                          0.0.4
 eoreader                        0.21.2
-esda                            2.6.0
+esda                            2.5.1
 executing                       2.1.0
+fastai                          2.7.17
+fastcore                        1.7.8
+fastdownload                    0.0.7
 fasteners                       0.19
 fastjsonschema                  2.20.0
+fastprogress                    1.0.3
 ffmpeg-python                   0.2.0
 filelock                        3.16.1
 fiona                           1.10.1
@@ -1428,13 +1444,13 @@ geedim                          1.8.1
 geemap                          0.34.3
 GeoAlchemy2                     0.15.2
 geocoder                        1.38.1
-geocube                         0.6.0
+geocube                         0.4.2
 geographiclib                   2.0
 geojson                         3.1.0
 geomet                          1.1.0
 geopandas                       1.0.1
 geopy                           2.4.1
-geospatial                      0.10.5
+geospatial                      0.11.0         /home/runner/work/geospatial/geospatial
 geotiff                         0.2.10
 ghp-import                      2.1.0
 giddy                           2.3.5
@@ -1462,14 +1478,17 @@ htmltools                       0.5.3
 httpcore                        1.0.5
 httplib2                        0.22.0
 httpx                           0.27.2
+huggingface-hub                 0.25.0
 hvplot                          0.10.0
-HyperCoast                      0.8.1
+HyperCoast                      0.6.3
+icecream                        2.1.3
 idna                            3.10
 imageio                         2.35.1
 imagesize                       1.4.1
 importlib_metadata              8.5.0
 importlib_resources             6.4.5
-inequality                      1.0.1
+inequality                      1.0.0
+iniconfig                       2.0.0
 ipyevents                       2.0.2
 ipyfilechooser                  0.6.0
 ipygany                         0.5.0
@@ -1510,14 +1529,15 @@ jupyterlab_pygments             0.3.0
 jupyterlab_server               2.27.3
 jupyterlab_widgets              1.1.10
 jupytext                        1.16.4
-kaleido                         0.2.1
 keplergl                        0.3.2
 keyring                         25.4.1
 kiwisolver                      1.4.7
+langcodes                       3.4.0
+language_data                   1.2.0
 laspy                           2.5.4
 lazy_loader                     0.4
-leafmap                         0.37.6
-libpysal                        4.12.1
+leafmap                         0.38.0
+libpysal                        4.8.1
 lightgbm                        4.5.0
 linkify-it-py                   2.0.3
 livereload                      2.7.0
@@ -1532,6 +1552,7 @@ mapboxgl                        0.10.2
 mapclassify                     2.8.0
 maplibre                        0.2.6
 mapwidget                       0.1.2
+marisa-trie                     1.2.0
 Markdown                        3.7
 markdown-callouts               0.4.0
 markdown-it-py                  3.0.0
@@ -1558,7 +1579,7 @@ mkdocs-pdf-export-plugin        0.5.10
 mkdocstrings                    0.26.1
 mkdocstrings-crystal            0.3.7
 mkdocstrings-python-legacy      0.2.4
-momepy                          0.8.0
+momepy                          0.6.0
 more-itertools                  10.5.0
 morecantile                     5.4.2
 movingpandas                    0.19.0
@@ -1568,20 +1589,33 @@ mss                             9.0.2
 multidict                       6.1.0
 multimethod                     1.12
 multipledispatch                1.0.0
+murmurhash                      1.0.10
 mypy-extensions                 1.0.0
 nbclient                        0.10.0
 nbconvert                       7.16.4
 nbformat                        5.10.4
 nest-asyncio                    1.6.0
 netCDF4                         1.7.1.post2
-networkx                        3.3
+networkx                        3.2.1
 nh3                             0.2.18
 notebook                        7.2.2
 notebook_shim                   0.2.4
 numba                           0.60.0
-numcodecs                       0.13.0
+numcodecs                       0.12.1
 numexpr                         2.10.1
 numpy                           1.26.4
+nvidia-cublas-cu12              12.1.3.1
+nvidia-cuda-cupti-cu12          12.1.105
+nvidia-cuda-nvrtc-cu12          12.1.105
+nvidia-cuda-runtime-cu12        12.1.105
+nvidia-cudnn-cu12               9.1.0.70
+nvidia-cufft-cu12               11.0.2.54
+nvidia-curand-cu12              10.3.2.106
+nvidia-cusolver-cu12            11.4.5.107
+nvidia-cusparse-cu12            12.1.0.106
+nvidia-nccl-cu12                2.20.5
+nvidia-nvjitlink-cu12           12.6.68
+nvidia-nvtx-cu12                12.1.105
 oauthlib                        3.2.2
 odc-geo                         0.4.8
 odc-stac                        0.3.10
@@ -1595,7 +1629,7 @@ paginate                        0.5.7
 palettable                      3.3.3
 pandas                          2.2.3
 pandocfilters                   1.5.1
-panel                           1.5.0
+panel                           1.4.5
 param                           2.1.1
 parso                           0.8.4
 partd                           1.4.2
@@ -1610,17 +1644,12 @@ planetary-computer              1.0.0
 platformdirs                    4.3.6
 plotly                          5.24.1
 pluggy                          1.5.0
-pointpats                       2.5.0
+pointpats                       2.4.0
 pooch                           1.8.2
 pqdm                            0.2.0
+preshed                         3.0.9
 prometheus_client               0.21.0
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>prompt-toolkit                  3.0.36
+prompt-toolkit                  3.0.36
 proto-plus                      1.24.0
 protobuf                        5.28.2
 psutil                          6.0.0
@@ -1630,6 +1659,7 @@ PuLP                            2.9.0
 pure_eval                       0.2.3
 py                              1.11.0
 pyarrow                         17.0.0
+pyarrow-hotfix                  0.6
 pyasn1                          0.6.1
 pyasn1_modules                  0.4.1
 pycodestyle                     2.12.1
@@ -1641,10 +1671,10 @@ pydantic_core                   2.23.4
 pydeck                          0.9.1
 pydyf                           0.11.0
 pyflakes                        3.2.0
-pygis                           0.6.5
+pygis                           0.7.0
 Pygments                        2.18.0
 pykdtree                        1.3.13
-pymdown-extensions              10.10
+pymdown-extensions              10.10.1
 pyntcloud                       0.3.1
 pyogrio                         0.9.0
 pyorbital                       1.8.3
@@ -1654,11 +1684,12 @@ pyphen                          0.16.0
 pyproj                          3.6.1
 pyproject-api                   1.8.0
 pyresample                      1.30.0
-pysal                           24.7
+pysal                           24.1
 pyshp                           2.3.1
 PySocks                         1.7.1
 pystac                          1.10.1
 pystac-client                   0.8.3
+pytest                          8.3.3
 python-box                      7.2.0
 python-cmr                      0.13.0
 python-dateutil                 2.9.0.post0
@@ -1691,42 +1722,50 @@ rfc3986-validator               0.1.1
 rich                            13.8.1
 rio-cogeo                       5.3.4
 rio-tiler                       6.7.0
-rioxarray                       0.17.0
+rioxarray                       0.15.0
 rpds-py                         0.20.0
 rsa                             4.9
 Rtree                           1.3.0
-s2cloudless                     1.7.2
+s2cloudless                     1.7.1
 s3fs                            2024.9.0
 s3transfer                      0.10.2
+safetensors                     0.4.5
 sankee                          0.2.5
 sarpy                           1.3.58
 satpy                           0.51.0
 scikit-image                    0.24.0
 scikit-learn                    1.5.2
-scipy                           1.14.1
+scipy                           1.13.1
 scooby                          0.10.0
 seaborn                         0.13.2
 SecretStorage                   3.3.3
 segregation                     2.5
 Send2Trash                      1.8.3
-sentinelhub                     3.11.0
+sentinelhub                     3.10.0
 sentinelsat                     1.2.1
+sentry-sdk                      2.14.0
 sertit                          1.42.0
 server-thread                   0.2.0
+setproctitle                    1.3.3
 setuptools                      75.1.0
 shapely                         2.0.6
+shellingham                     1.5.4
 shiny                           1.1.0
 simplejson                      3.19.3
 simplekml                       1.3.6
 six                             1.16.0
 sliderule                       4.6.4
+smart-open                      7.0.4
 smmap                           5.0.1
 sniffio                         1.3.1
 snowballstemmer                 2.2.0
 snuggs                          1.4.7
 sortedcontainers                2.4.0
 soupsieve                       2.6
-spaghetti                       1.7.6
+spacy                           3.7.6
+spacy-legacy                    3.0.12
+spacy-loggers                   1.0.5
+spaghetti                       1.7.4
 spglm                           1.1.0
 Sphinx                          8.0.2
 sphinxcontrib-applehelp         2.0.0
@@ -1737,14 +1776,15 @@ sphinxcontrib-qthelp            2.0.0
 sphinxcontrib-serializinghtml   2.0.0
 spint                           1.0.7
 splot                           1.1.7
-spopt                           0.6.1
+spopt                           0.5.0
 spreg                           1.6.1
 spvcm                           0.3.0
 spyndex                         0.6.0
 SQLAlchemy                      2.0.35
+srsly                           2.4.8
 stack-data                      0.6.3
 stackstac                       0.5.1
-starlette                       0.38.5
+starlette                       0.38.6
 statsmodels                     0.14.3
 sympy                           1.13.3
 tabulate                        0.9.0
@@ -1752,23 +1792,34 @@ tblib                           3.0.0
 tenacity                        9.0.0
 termcolor                       2.4.0
 terminado                       0.18.1
+thinc                           8.2.4
 threadpoolctl                   3.5.0
-tifffile                        2024.9.20
-tinycss2                        1.3.0
+tifffile                        2024.8.30
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>tinycss2                        1.3.0
 tinynetrc                       1.3.1
 tobler                          0.11.3
 tokenize-rt                     6.0.0
 tomli                           2.0.1
 tomli_w                         1.0.0
 toolz                           0.12.1
+torch                           2.4.1
+torchvision                     0.19.1
 tornado                         6.4.1
 tox                             4.20.0
 tqdm                            4.66.5
 traitlets                       5.14.3
 traittypes                      0.2.1
+triton                          3.0.0
 trollimage                      1.25.0
 trollsift                       0.5.1
 twine                           5.1.1
+typer                           0.12.5
 types-python-dateutil           2.9.0.20240906
 typing_extensions               4.12.2
 typing-inspect                  0.9.0
@@ -1776,15 +1827,18 @@ tzdata                          2024.1
 uc-micro-py                     1.0.3
 uri-template                    1.3.0
 uritemplate                     4.1.1
-urllib3                         2.2.3
+urllib3                         1.26.20
 usgs                            0.3.5
 utm                             0.7.0
 uvicorn                         0.30.6
 validators                      0.34.0
 virtualenv                      20.26.5
+wandb                           0.18.1
+wasabi                          1.1.3
 watchdog                        5.0.2
 watchfiles                      0.24.0
 wcwidth                         0.2.13
+weasel                          0.4.1
 weasyprint                      62.3
 webcolors                       24.8.0
 webencodings                    0.5.1
@@ -1798,8 +1852,9 @@ widgetsnbextension              3.6.9
 wirerope                        0.4.7
 wrapt                           1.16.0
 wxee                            0.4.2
-xarray                          2024.9.0
+xarray                          2024.7.0
 xarray-spatial                  0.4.0
+xcube                           0.0.9
 xee                             0.0.15
 xyzservices                     2024.9.0
 yarl                            1.11.1
