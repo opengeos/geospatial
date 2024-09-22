@@ -40,7 +40,7 @@ mapboxgl
 mapclassify
 maplibre; python_version >= '3.9'
 mapwidget
-# movingpandas
+movingpandas
 mss
 netcdf4
 networkx
@@ -50,12 +50,12 @@ overturemaps
 owslib
 palettable
 panel
-# pdal
+pdal
 planetary-computer
 plotly
 # proplot
 # psycopg2
-# pydeck
+pydeck
 pygis >=0.6.5
 pyntcloud
 pyproj
