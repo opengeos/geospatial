@@ -55,8 +55,8 @@ planetary-computer
 plotly
 # proplot
 # psycopg2
-pydeck
-pygis
+# pydeck
+pygis >=0.6.5
 pyntcloud
 pyproj
 pysal
