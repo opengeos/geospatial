@@ -27,6 +27,11 @@ classifiers = [
 ]
 authors = [{name = "Qiusheng Wu", email = "giswqs@gmail.com"}]
 
+[project.optional-dependencies]
+all = [
+    "lidar",
+]
+
 [tool]
 [tool.setuptools.packages.find]
 include = ["geospatial*"]
