@@ -10,7 +10,7 @@ dynamic = [
 ]
 description = "A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = {text = "MIT license"}
 keywords = ["geospatial"]
 classifiers = [
