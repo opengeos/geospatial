@@ -332,10 +332,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Video Tutorial">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#installing-using-uv" class="md-nav__link">
     <span class="md-ellipsis">
       Installing using uv
@@ -343,58 +342,20 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#installing-using-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing using conda
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-with-anacondaminiconda" class="md-nav__link">
+  <a href="#installing-using-pip" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing with Anaconda/Miniconda
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing with Anaconda/Miniconda">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-the-conda-forge-channel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using the conda-forge channel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-conda-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a new conda environment
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-mamba" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Mamba
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-with-pip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing with pip
+      Installing using pip
     </span>
   </a>
   
@@ -611,10 +572,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Video Tutorial">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#installing-using-uv" class="md-nav__link">
     <span class="md-ellipsis">
       Installing using uv
@@ -622,58 +582,20 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#installing-using-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing using conda
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-with-anacondaminiconda" class="md-nav__link">
+  <a href="#installing-using-pip" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing with Anaconda/Miniconda
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing with Anaconda/Miniconda">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-the-conda-forge-channel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using the conda-forge channel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-conda-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a new conda environment
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-mamba" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Mamba
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-with-pip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing with pip
+      Installing using pip
     </span>
   </a>
   
@@ -731,45 +653,25 @@
 <p>The geospatial package has many dependencies, such as <a href="https://geopandas.org">GeoPandas</a> and <a href="https://github.com/banesullivan/localtileserver">localtileserver</a>. These optional dependencies can sometimes be a challenge to install, especially on Windows. Therefore, we advise you to closely follow the recommendations below to avoid installation problems.</p>
 <h2 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link">&para;</a></h2>
 <p><a href="https://youtu.be/Y1xB7d2VbFY" title="Introducing geospatial"><img alt="Introducing geospatial" src="../images/thumbnail.png" /></a></p>
-<h3 id="installing-using-uv">Installing using uv<a class="headerlink" href="#installing-using-uv" title="Permanent link">&para;</a></h3>
+<h2 id="installing-using-uv">Installing using uv<a class="headerlink" href="#installing-using-uv" title="Permanent link">&para;</a></h2>
 <p><a href="https://docs.astral.sh/uv/">uv</a> is an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>geospatial
-uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>pyproj
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>geospatial
 </code></pre></div></td></tr></table></div>
-<h2 id="installing-with-anacondaminiconda">Installing with Anaconda/Miniconda<a class="headerlink" href="#installing-with-anacondaminiconda" title="Permanent link">&para;</a></h2>
-<p>To install geospatial and all its dependencies, we recommend you use the <a href="https://conda.io/en/latest">conda</a> package manager. This can be obtained by installing the <a href="https://www.anaconda.com/distribution">Anaconda Distribution</a> (a free Python distribution for data science), or through <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> (minimal distribution only containing Python and the conda package manager). See also the <a href="https://conda.io/docs/user-guide/install/download.html">installation docs</a> for more information on how to install Anaconda or Miniconda locally.</p>
-<h3 id="using-the-conda-forge-channel">Using the conda-forge channel<a class="headerlink" href="#using-the-conda-forge-channel" title="Permanent link">&para;</a></h3>
-<p>Geospatial is available on the <a href="https://anaconda.org/conda-forge/geospatial">conda-forge</a> channel, a community effort that provides <a href="https://conda-forge.org">conda packages</a> for a wide range of software.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>geospatial
+<p>If you are on Linux and want to install GDAL, you can use the following command:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>pyproj
 </code></pre></div></td></tr></table></div>
-<h3 id="creating-a-new-conda-environment">Creating a new conda environment<a class="headerlink" href="#creating-a-new-conda-environment" title="Permanent link">&para;</a></h3>
-<p>Creating a new environment is not strictly necessary, but given that some geospatial dependencies might have a version conflict with other geospatial packages in an existing conda environment, it is a good practice to install geospatial and its dependencies in a clean environment starting fresh.</p>
-<p>The following commands create a new conda environment with the name <code>geo</code> and install geospatial and its dependencies (e.g., GeoPandas, localtileserver) in it:</p>
+<p>For windows and macOS users, you can install GDAL using mamba as shown in the following section.</p>
+<h2 id="installing-using-conda">Installing using conda<a class="headerlink" href="#installing-using-conda" title="Permanent link">&para;</a></h2>
+<p>To install geospatial and all its dependencies, we recommend you use the <a href="https://mamba.readthedocs.io/en/latest/user_guide/mamba.html">mamba</a> package manager. This can be obtained by installing the <a href="https://www.anaconda.com/download">Anaconda Distribution</a> (a free Python distribution for data science), or through <a href="https://docs.anaconda.com/miniconda/">Miniconda</a> (minimal distribution only containing Python and the conda package manager).</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>geo<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
-conda<span class="w"> </span>activate<span class="w"> </span>geo
-conda<span class="w"> </span>install<span class="w"> </span>geopandas
-conda<span class="w"> </span>install<span class="w"> </span>geospatial<span class="w"> </span>-c<span class="w"> </span>conda-forge
-</code></pre></div></td></tr></table></div>
-<p><strong>Important note:</strong> If you are using Windows, we advise you to closely follow the installation instructions above to install GeoPandas from the default conda channel (<code>conda install geopandas</code>) rather than from the conda-forge channel. This can avoid a potential <code>spatialindex_c-64.dll</code> error when using GeoPandas (<a href="https://github.com/geopandas/geopandas/issues/1812">source</a>). If you are using Linux or macOS, it is okay to install all geospatial dependencies from the conda-forge channel with the following command:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>geospatial
-</code></pre></div></td></tr></table></div>
-<h3 id="using-mamba">Using Mamba<a class="headerlink" href="#using-mamba" title="Permanent link">&para;</a></h3>
-<p>When installing packages using the conda package manager, sometimes it can take a while for conda to resolve dependencies. If it takes too long or fails to resolve dependencies, you can try using the <a href="https://mamba.readthedocs.io/en/latest">Mamba</a> package manager to install geospatial and its dependencies. Mamba is a fast, robust, and cross-platform package manager. It runs on Windows, macOS, and Linux, and is fully compatible with conda packages and supports most of conda’s commands. Once Mamba is installed in a conda environment, you can then simply replace any <code>conda</code> command with <code>mamba</code>. For example, to install geospatial and its dependencies with Mamba, you can use the following commands:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>geo<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>geo<span class="w"> </span>python
 conda<span class="w"> </span>activate<span class="w"> </span>geo
 conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mamba
-mamba<span class="w"> </span>install<span class="w"> </span>geopandas
 mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>geospatial
 </code></pre></div></td></tr></table></div>
-<h2 id="installing-with-pip">Installing with pip<a class="headerlink" href="#installing-with-pip" title="Permanent link">&para;</a></h2>
+<h2 id="installing-using-pip">Installing using pip<a class="headerlink" href="#installing-using-pip" title="Permanent link">&para;</a></h2>
 <p>geospatial is also available on <a href="https://pypi.org/project/geospatial">PyPI</a>. It can be installed with pip using the following command:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>geospatial
 </code></pre></div></td></tr></table></div>
@@ -816,7 +718,7 @@ pip<span class="w"> </span>install<span class="w"> </span>.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-09-22
+    2024-09-23
   </span>
 
     
