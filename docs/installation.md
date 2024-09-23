@@ -6,6 +6,15 @@ The geospatial package has many dependencies, such as [GeoPandas](https://geopan
 
 [![Introducing geospatial](images/thumbnail.png)](https://youtu.be/Y1xB7d2VbFY "Introducing geospatial")
 
+### Installing using uv
+
+[uv](https://docs.astral.sh/uv/) is an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install `geospatial` using `uv` as follows:
+
+```bash
+uv pip install geospatial
+uv pip install --find-links https://girder.github.io/large_image_wheels gdal pdal pyproj
+```
+
 ## Installing with Anaconda/Miniconda
 
 To install geospatial and all its dependencies, we recommend you use the [conda](https://conda.io/en/latest) package manager. This can be obtained by installing the [Anaconda Distribution](https://www.anaconda.com/distribution) (a free Python distribution for data science), or through [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (minimal distribution only containing Python and the conda package manager). See also the [installation docs](https://conda.io/docs/user-guide/install/download.html) for more information on how to install Anaconda or Miniconda locally.
