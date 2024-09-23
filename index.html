@@ -1137,7 +1137,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <li>Documentation: <a href="https://geospatial.gishub.org">https://geospatial.gishub.org</a></li>
 </ul>
 <h2 id="disclaimer">Disclaimer<a class="anchor-link" href="#disclaimer">¶</a></h2><p>Currently, the <code>geospatial</code> package only helps you install commonly used packages for geospatial analysis and data visualization with only one command, making it easier to set up a conda environment for geospatial analysis and avoid dependency conflicts during installation. The <code>geospatial</code> package itself does not have any meaningful functions yet. After installation, you can continue to the commonly used geospatial packages as usual.</p>
-<h2 id="installation">Installation<a class="anchor-link" href="#installation">¶</a></h2><h3 id="uv">uv<a class="anchor-link" href="#uv">¶</a></h3><p><a href="https://docs.astral.sh/uv/">uv</a> us an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
+<h2 id="installation">Installation<a class="anchor-link" href="#installation">¶</a></h2><h3 id="uv">uv<a class="anchor-link" href="#uv">¶</a></h3><p><a href="https://docs.astral.sh/uv/">uv</a> is an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
 <div class="highlight"><pre><span></span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>geospatial
 uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>pyproj
 </pre></div>
@@ -1398,7 +1398,13 @@ docker-pycreds                  0.4.0
 docopt                          0.6.2
 docutils                        0.21.2
 donfig                          0.8.1.post1
-duckdb                          1.1.0
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>duckdb                          1.1.0
 earthaccess                     0.10.0
 earthengine-api                 1.1.0
 earthpy                         0.9.4
@@ -1442,13 +1448,7 @@ geocube                         0.4.2
 geographiclib                   2.0
 geojson                         3.1.0
 geomet                          1.1.0
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>geopandas                       1.0.1
+geopandas                       1.0.1
 geopy                           2.4.1
 geospatial                      0.11.0         /home/runner/work/geospatial/geospatial
 geotiff                         0.2.10

@@ -332,6 +332,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Video Tutorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-using-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing using uv
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -596,6 +611,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Video Tutorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-using-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing using uv
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -701,6 +731,12 @@
 <p>The geospatial package has many dependencies, such as <a href="https://geopandas.org">GeoPandas</a> and <a href="https://github.com/banesullivan/localtileserver">localtileserver</a>. These optional dependencies can sometimes be a challenge to install, especially on Windows. Therefore, we advise you to closely follow the recommendations below to avoid installation problems.</p>
 <h2 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link">&para;</a></h2>
 <p><a href="https://youtu.be/Y1xB7d2VbFY" title="Introducing geospatial"><img alt="Introducing geospatial" src="../images/thumbnail.png" /></a></p>
+<h3 id="installing-using-uv">Installing using uv<a class="headerlink" href="#installing-using-uv" title="Permanent link">&para;</a></h3>
+<p><a href="https://docs.astral.sh/uv/">uv</a> is an extremely fast Python package and project manager, written in Rust. It is designed to be a drop-in replacement for pip. You can install <code>geospatial</code> using <code>uv</code> as follows:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>geospatial
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--find-links<span class="w"> </span>https://girder.github.io/large_image_wheels<span class="w"> </span>gdal<span class="w"> </span>pdal<span class="w"> </span>pyproj
+</code></pre></div></td></tr></table></div>
 <h2 id="installing-with-anacondaminiconda">Installing with Anaconda/Miniconda<a class="headerlink" href="#installing-with-anacondaminiconda" title="Permanent link">&para;</a></h2>
 <p>To install geospatial and all its dependencies, we recommend you use the <a href="https://conda.io/en/latest">conda</a> package manager. This can be obtained by installing the <a href="https://www.anaconda.com/distribution">Anaconda Distribution</a> (a free Python distribution for data science), or through <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> (minimal distribution only containing Python and the conda package manager). See also the <a href="https://conda.io/docs/user-guide/install/download.html">installation docs</a> for more information on how to install Anaconda or Miniconda locally.</p>
 <h3 id="using-the-conda-forge-channel">Using the conda-forge channel<a class="headerlink" href="#using-the-conda-forge-channel" title="Permanent link">&para;</a></h3>
@@ -780,7 +816,7 @@ pip<span class="w"> </span>install<span class="w"> </span>.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-02-02
+    2024-09-22
   </span>
 
     
