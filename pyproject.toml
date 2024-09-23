@@ -28,7 +28,7 @@ authors = [{name = "Qiusheng Wu", email = "giswqs@gmail.com"}]
 
 [project.optional-dependencies]
 all = [
-    "lidar",
+    "lidar", "xcube"
 ]
 
 [tool]

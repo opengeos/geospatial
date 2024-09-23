@@ -85,7 +85,7 @@ whiteboxgui
 wxee
 xarray
 xarray-spatial
-xcube
+# xcube
 xee
 # xmovie
 xyzservices
