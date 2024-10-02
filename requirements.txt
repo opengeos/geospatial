@@ -5,6 +5,7 @@ bokeh
 cenpy
 contextily
 cubo
+dask-ee
 dask-geopandas
 datashader
 duckdb; python_version < '3.13'
