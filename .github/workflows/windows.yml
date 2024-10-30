@@ -26,8 +26,14 @@ jobs:
             - name: Set up Python ${{ matrix.python-version }}
               run: uv python install ${{ matrix.python-version }}
 
+            - name: Install optional dependencies
+              run: |
+                  uv venv
+                  uv pip install --find-links https://girder.github.io/large_image_wheels gdal pyproj
+                  uv pip install pytest
+
             - name: Install dependencies
-              run: uv sync --python ${{ matrix.python-version }}
+              run: uv pip install -e . --python ${{ matrix.python-version }}
 
             - name: Test import
               run: |
