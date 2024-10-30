@@ -29,6 +29,7 @@ jobs:
 
             - name: Install optional dependencies
               run: |
+                  uv venv
                   uv pip install --find-links https://girder.github.io/large_image_wheels gdal pyproj
                   uv pip install pytest
 
