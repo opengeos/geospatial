@@ -22,7 +22,7 @@ geemap>=0.34.3
 # gemgis
 geoalchemy2
 geocube
-geofileops
+# geofileops
 geopandas
 geotiff
 # geosnap
