@@ -31,7 +31,7 @@ jobs:
               run: |
                   uv pip install --find-links https://girder.github.io/large_image_wheels gdal pyproj
                   uv pip install pytest
-                  
+
             - name: Install dependencies
               run: uv pip install -e . --python ${{ matrix.python-version }}
 
