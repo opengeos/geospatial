@@ -1,4 +1,0 @@
-
-# geospatial module
-
-::: geospatial.geospatial
