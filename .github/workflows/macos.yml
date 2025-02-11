@@ -25,13 +25,13 @@ jobs:
               uses: astral-sh/setup-uv@v5
               with:
                   version: "0.4.12"
-                  enable-cache: true
+                  enable-cache: false
 
             - name: Set up Python ${{ matrix.config.py }}
-              run: uv python install ${{ matrix.config.py }}
+              run: uv venv --python ${{ matrix.config.py }}
 
             - name: Install dependencies
-              run: uv sync --python ${{ matrix.config.py }}
+              run: uv pip install .
 
             - name: Test import
               run: |

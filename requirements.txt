@@ -31,7 +31,7 @@ hvplot
 hypercoast
 ipygany
 ipyleaflet
-keplergl
+# keplergl
 laspy
 leafmap>=0.38.0
 # lidar
