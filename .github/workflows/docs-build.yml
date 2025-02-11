@@ -24,10 +24,10 @@ jobs:
                   enable-cache: true
 
             - name: Set up Python ${{ matrix.python-version }}
-              run: uv python install ${{ matrix.python-version }}
+              run: uv venv --python ${{ matrix.python-version }}
 
             - name: Install dependencies
-              run: uv sync --python ${{ matrix.python-version }}
+              run: uv pip install .
 
             - name: Install optional dependencies
               run: |
