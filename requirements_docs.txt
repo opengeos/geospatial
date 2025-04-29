@@ -14,7 +14,7 @@ mkdocs-material
 mkdocs-pdf-export-plugin
 mkdocstrings
 mkdocstrings-crystal
-mkdocstrings-python-legacy
+mkdocstrings-python
 nbconvert
 pip
 sphinx
