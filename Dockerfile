@@ -16,14 +16,26 @@ RUN apt-get update && \
 # ------------------------------
 # 2. Install conda packages into base env
 # ------------------------------
+# ------------------------------
+# 2. Install conda packages into base env
+# ------------------------------
 RUN mamba install -n base -c conda-forge -y \
     gdal \
     proj \
     geos \
     pyproj \
-    geospatial \
+    "geospatial>=0.11.5" \
     && mamba clean --all --yes \
     && fix-permissions $CONDA_DIR
+
+RUN mamba install -c conda-forge --force-reinstall gdal
+
+# ------------------------------
+# 2b. Create missing sqlite symlinks (after files exist)
+# ------------------------------
+RUN ln -s $CONDA_PREFIX/lib/libsqlite3.so.3.50.0 $CONDA_PREFIX/lib/libsqlite3.so \
+ && ln -s $CONDA_PREFIX/lib/libsqlite3.so.3.50.0 $CONDA_PREFIX/lib/libsqlite3.so.0
+
 
 # ------------------------------
 # 3. Set geospatial environment variables
