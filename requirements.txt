@@ -1,14 +1,14 @@
 # --find-links https://girder.github.io/large_image_wheels GDAL
-# cartopy; platform_platform != "Windows"
 apache-sedona
 bokeh
+# cartopy; platform_platform != "Windows"
 cenpy
 contextily
 cubo
 dask-ee
 dask-geopandas
 datashader
-duckdb; python_version < '3.13'
+duckdb
 earthaccess
 earthengine-api
 earthpy
@@ -18,13 +18,13 @@ eemont
 eoreader
 fiona
 folium
-geemap>=0.34.3
+geemap>=0.35.0
 # gemgis
 geoalchemy2
 geocube
 geopandas
-geotiff
 # geosnap
+geotiff
 # geoviews
 h3
 hvplot
@@ -33,10 +33,10 @@ ipygany
 ipyleaflet
 # keplergl
 laspy
-leafmap>=0.38.0
+leafmap>=0.47.2
 # lidar
 localtileserver
-lonboard
+# lonboard
 mapboxgl
 mapclassify
 maplibre
@@ -76,11 +76,13 @@ sentinelsat
 shapely
 simplekml
 sliderule
+solara
 spyndex
 sqlalchemy
 stackstac
 # tropycal
 usgs
+voila
 whitebox
 whiteboxgui
 wxee
