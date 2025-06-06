@@ -59,7 +59,9 @@ plotly
 # pydeck
 pygis >=0.7.0
 pyntcloud
+pyogrio
 pyproj
+pyresample
 pysal
 pyshp
 pystac-client
