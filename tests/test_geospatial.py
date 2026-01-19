@@ -2,7 +2,6 @@
 
 """Tests for `geospatial` package."""
 
-
 import unittest
 
 from geospatial import geospatial
