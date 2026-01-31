@@ -62,7 +62,13 @@ RUN pip install -U . && \
     fix-permissions /home/jovyan
 
 # ------------------------------
-# 6. Switch back to default user
+# 6. Install uv (fast Python package manager)
+# ------------------------------
+RUN pip install uv && \
+    fix-permissions $CONDA_DIR
+
+# ------------------------------
+# 7. Switch back to default user
 # ------------------------------
 USER $NB_UID
 WORKDIR /home/jovyan
