@@ -387,7 +387,7 @@ name = "asgiref"
 version = "3.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
+    { name = "typing-extensions", marker = "(python_full_version == '3.10.*' and sys_platform != 'emscripten') or (python_full_version < '3.11' and sys_platform == 'emscripten')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/29/38/b3395cc9ad1b56d2ddac9970bc8f4141312dbaec28bc7c218b0dfafd0f42/asgiref-3.8.1.tar.gz", hash = "sha256:c343bd80a0bec947a9860adb4c432ffa7db769836c64238fc34bdc3fec84d590", size = 35186, upload-time = "2024-03-22T14:39:36.863Z" }
 wheels = [
@@ -552,7 +552,8 @@ version = "3.4.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "contourpy" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "packaging" },
@@ -626,7 +627,8 @@ name = "branca"
 version = "0.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6f/45/9d999699e3dd6d29b20ee92fb48f3edd76325684690bc9c6881f6eab2857/branca-0.7.2.tar.gz", hash = "sha256:ca4c94643ef31b819987ca5bd19c6009ea17b440baa3aac04628545f7a4da023", size = 27015, upload-time = "2024-04-25T14:32:55.639Z" }
 wheels = [
@@ -1309,7 +1311,8 @@ complete = [
     { name = "bokeh" },
     { name = "dask-expr" },
     { name = "distributed" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "lz4" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
@@ -1497,7 +1500,8 @@ dependencies = [
     { name = "click" },
     { name = "cloudpickle" },
     { name = "dask" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "locket" },
     { name = "msgpack" },
     { name = "packaging" },
@@ -1744,6 +1748,15 @@ wheels = [
 ]
 
 [[package]]
+name = "eval-type-backport"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fb/a3/cafafb4558fd638aadfe4121dc6cefb8d743368c085acb2f521df0f3d9d7/eval_type_backport-0.3.1.tar.gz", hash = "sha256:57e993f7b5b69d271e37482e62f74e76a0276c82490cf8e4f0dffeb6b332d5ed", size = 9445, upload-time = "2025-12-02T11:51:42.987Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cf/22/fdc2e30d43ff853720042fa15baa3e6122722be1a7950a98233ebb55cd71/eval_type_backport-0.3.1-py3-none-any.whl", hash = "sha256:279ab641905e9f11129f56a8a78f493518515b83402b860f6f06dd7c011fdfa8", size = 6063, upload-time = "2025-12-02T11:51:41.665Z" },
+]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1906,7 +1919,8 @@ dependencies = [
     { name = "click" },
     { name = "importlib-metadata", marker = "python_full_version < '3.10'" },
     { name = "itsdangerous" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "werkzeug" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/5b/77/3accd62b8771954e9584beb03f080385b32ddcad30009d2a4fe4068a05d9/Flask-2.1.3.tar.gz", hash = "sha256:15972e5017df0575c3d6c090ba168b6db90259e620ac8d7ea813a396bad5b6cb", size = 630206, upload-time = "2022-07-13T20:56:00.126Z" }
@@ -1962,7 +1976,8 @@ version = "0.17.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "branca" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "requests" },
@@ -2390,7 +2405,8 @@ dependencies = [
     { name = "localtileserver" },
     { name = "mapboxgl" },
     { name = "mapclassify" },
-    { name = "maplibre" },
+    { name = "maplibre", version = "0.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "maplibre", version = "0.3.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "mapwidget" },
     { name = "movingpandas" },
     { name = "mss" },
@@ -2906,13 +2922,51 @@ sdist = { url = "https://files.pythonhosted.org/packages/1a/43/e1d53588561e53321
 name = "htmltools"
 version = "0.5.3"
 source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.10.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.10.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.10.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.11.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.11.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.11.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.12.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform == 'emscripten'",
+    "python_full_version >= '3.13' and sys_platform == 'darwin'",
+    "python_full_version >= '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version >= '3.13' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform == 'emscripten'",
+]
 dependencies = [
-    { name = "packaging" },
-    { name = "typing-extensions" },
+    { name = "packaging", marker = "python_full_version >= '3.10'" },
+    { name = "typing-extensions", marker = "python_full_version >= '3.10'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6d/32/8c37e8884fa7b125b1e3dbce8446786992a8e631f51ef7d58d71408bd04a/htmltools-0.5.3.tar.gz", hash = "sha256:192e430498e8792831cd6cc5d7a43d3f13d8eb03eb7dd7d8e99f629bf73cf03c", size = 93136, upload-time = "2024-07-18T15:27:16.111Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/62/01/34e35d568fcc286db72c89490289dce56fc5892506d37ffa7b3c6e1b2f7e/htmltools-0.5.3-py3-none-any.whl", hash = "sha256:5e2d12309fd6d9eb39a5fe8183da9ad90f6677d73dd41a82ded4b81ba0e43c86", size = 83204, upload-time = "2024-07-18T15:27:14.744Z" },
+]
+
+[[package]]
+name = "htmltools"
+version = "0.6.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.10' and sys_platform == 'emscripten'",
+]
+dependencies = [
+    { name = "packaging", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cd/1d/c568d17e9fb5ad5aa0ca3531c58d36fe69deb8eee4e53ff6425c1f99f210/htmltools-0.6.0.tar.gz", hash = "sha256:e8a3fb023d748935035db7ff17f620612ffc814a6a80b6ae388f7b7ab182adf7", size = 97152, upload-time = "2024-10-29T20:21:43.378Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/ba/aa99706246f1938ca905eb6eeb7db832ac2e157aa4b805acb5cd4cd1791a/htmltools-0.6.0-py3-none-any.whl", hash = "sha256:072a274ff5e2851e0acce13fc5bb2bbdbbad8268dc8b123f881c05012ce7dce0", size = 84954, upload-time = "2024-10-29T20:21:42.067Z" },
 ]
 
 [[package]]
@@ -3373,12 +3427,53 @@ wheels = [
 name = "jinja2"
 version = "3.1.4"
 source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.10.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.10.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.10.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.10' and sys_platform == 'emscripten'",
+    "python_full_version == '3.10.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.11.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.11.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.11.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.12.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform == 'emscripten'",
+    "python_full_version >= '3.13' and sys_platform == 'darwin'",
+    "python_full_version >= '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version >= '3.13' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform == 'emscripten'",
+]
 dependencies = [
-    { name = "markupsafe" },
+    { name = "markupsafe", marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/ed/55/39036716d19cab0747a5020fc7e907f362fbf48c984b14e62127f7e68e5d/jinja2-3.1.4.tar.gz", hash = "sha256:4a3aee7acbbe7303aede8e9648d13b8bf88a429282aa6122a993f0ac800cb369", size = 240245, upload-time = "2024-05-05T23:42:02.455Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl", hash = "sha256:bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d", size = 133271, upload-time = "2024-05-05T23:41:59.928Z" },
+]
+
+[[package]]
+name = "jinja2"
+version = "3.1.6"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.10' and platform_machine == 'arm64' and sys_platform == 'darwin'",
+    "python_full_version < '3.10' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "(python_full_version < '3.10' and platform_machine != 'arm64' and sys_platform == 'darwin') or (python_full_version < '3.10' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux')",
+    "python_full_version < '3.10' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+]
+dependencies = [
+    { name = "markupsafe", marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz", hash = "sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d", size = 245115, upload-time = "2025-03-05T20:05:02.478Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67", size = 134899, upload-time = "2025-03-05T20:05:00.369Z" },
 ]
 
 [[package]]
@@ -3544,7 +3639,8 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "argon2-cffi" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "jupyter-client" },
     { name = "jupyter-core" },
     { name = "jupyter-events" },
@@ -3589,7 +3685,8 @@ dependencies = [
     { name = "httpx" },
     { name = "importlib-metadata", marker = "python_full_version < '3.10'" },
     { name = "ipykernel" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "jupyter-core" },
     { name = "jupyter-lsp" },
     { name = "jupyter-server" },
@@ -3622,7 +3719,8 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "babel" },
     { name = "importlib-metadata", marker = "python_full_version < '3.10'" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "json5" },
     { name = "jsonschema" },
     { name = "jupyter-server" },
@@ -3810,7 +3908,8 @@ dependencies = [
     { name = "ipyleaflet" },
     { name = "ipyvuetify" },
     { name = "ipywidgets" },
-    { name = "maplibre" },
+    { name = "maplibre", version = "0.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "maplibre", version = "0.3.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "matplotlib" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
@@ -4122,7 +4221,8 @@ dependencies = [
     { name = "chroma-py" },
     { name = "colour" },
     { name = "geojson" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "matplotlib" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/90/03/bb7d041edaa91968be45d87e44b883ba568da6e072ce16f9c7147265de82/mapboxgl-0.10.2.tar.gz", hash = "sha256:359133c20e1c635400965f491313ee003bba103926042790b13d27989ab30757", size = 19443, upload-time = "2019-06-02T15:18:59.534Z" }
@@ -4151,16 +4251,62 @@ wheels = [
 name = "maplibre"
 version = "0.2.6"
 source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.10.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.10.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.10.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.10' and sys_platform == 'emscripten'",
+    "python_full_version == '3.10.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.11.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.11.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.11.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.12.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform == 'emscripten'",
+    "python_full_version >= '3.13' and sys_platform == 'darwin'",
+    "python_full_version >= '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version >= '3.13' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform == 'emscripten'",
+]
 dependencies = [
-    { name = "anywidget" },
-    { name = "htmltools" },
-    { name = "jinja2" },
-    { name = "pydantic" },
-    { name = "shiny" },
+    { name = "anywidget", marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "htmltools", version = "0.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "htmltools", version = "0.6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "pydantic", marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "shiny", version = "1.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "shiny", version = "1.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e8/89/7fbe7805e48e3b1280f611ba75bb710948d4812f47bf0bba72dcc30cf51d/maplibre-0.2.6.tar.gz", hash = "sha256:638022b703798ae499bcef81064214785c051ac0ef7b6c9bb53a1fba453d41d4", size = 484980, upload-time = "2024-07-02T10:11:20.948Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/85/9c/429e928ca5a2ca476f47790a562a40d34e641a2ea7c39c3dcde4928e5fd9/maplibre-0.2.6-py3-none-any.whl", hash = "sha256:96cc82a43204c59874642a9b5f9473197788b4c9b0760635d57544791cef1c59", size = 494281, upload-time = "2024-07-02T10:11:18.674Z" },
+]
+
+[[package]]
+name = "maplibre"
+version = "0.3.6"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.10' and platform_machine == 'arm64' and sys_platform == 'darwin'",
+    "python_full_version < '3.10' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "(python_full_version < '3.10' and platform_machine != 'arm64' and sys_platform == 'darwin') or (python_full_version < '3.10' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux')",
+    "python_full_version < '3.10' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+]
+dependencies = [
+    { name = "branca", marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
+    { name = "eval-type-backport", marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
+    { name = "pydantic", marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d0/33/68e9378eef4feda7666af71c169ac598e405d30df03489c3544953a52b79/maplibre-0.3.6.tar.gz", hash = "sha256:10d3b80e15a71a029ac152a4094b699ef5b256155ca09d4a0fd2cfb2a8d8dbb1", size = 1359517, upload-time = "2025-12-13T17:45:39.33Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cd/e8/d0e506ebf78554e6d6670101ccb562448fd959d70527a11cb380f6c3de77/maplibre-0.3.6-py3-none-any.whl", hash = "sha256:eeafab617d4a1b71c0c174c71405f67c4b4e494fe1b27968d4d2359bc160e277", size = 1374309, upload-time = "2025-12-13T17:45:37.297Z" },
 ]
 
 [[package]]
@@ -4726,6 +4872,15 @@ wheels = [
 ]
 
 [[package]]
+name = "narwhals"
+version = "2.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/75/59/81d0f4cad21484083466f278e6b392addd9f4205b48d45b5c8771670ebf8/narwhals-2.17.0.tar.gz", hash = "sha256:ebd5bc95bcfa2f8e89a8ac09e2765a63055162837208e67b42d6eeb6651d5e67", size = 620306, upload-time = "2026-02-23T09:44:34.142Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4b/27/20770bd6bf8fbe1e16f848ba21da9df061f38d2e6483952c29d2bb5d1d8b/narwhals-2.17.0-py3-none-any.whl", hash = "sha256:2ac5307b7c2b275a7d66eeda906b8605e3d7a760951e188dcfff86e8ebe083dd", size = 444897, upload-time = "2026-02-23T09:44:32.006Z" },
+]
+
+[[package]]
 name = "nbclient"
 version = "0.10.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4749,7 +4904,8 @@ dependencies = [
     { name = "bleach" },
     { name = "defusedxml" },
     { name = "importlib-metadata", marker = "python_full_version < '3.10'" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "jupyter-core" },
     { name = "jupyterlab-pygments" },
     { name = "markupsafe" },
@@ -5303,6 +5459,12 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/30/c0/66f88d58500e990a9a0a5c06f98862edf1d0a3a430781218a8c193948438/opencv_python_headless-4.10.0.84-cp37-abi3-win32.whl", hash = "sha256:9092404b65458ed87ce932f613ffbb1106ed2c843577501e5768912360fc50ec", size = 28675298, upload-time = "2024-06-17T18:28:56.897Z" },
     { url = "https://files.pythonhosted.org/packages/26/d0/22f68eb23eea053a31655960f133c0be9726c6a881547e6e9e7e2a946c4f/opencv_python_headless-4.10.0.84-cp37-abi3-win_amd64.whl", hash = "sha256:afcf28bd1209dd58810d33defb622b325d3cbe49dcd7a43a902982c33e5fad05", size = 38754031, upload-time = "2024-06-17T18:29:04.871Z" },
 ]
+
+[[package]]
+name = "orjson"
+version = "3.11.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/04/b8/333fdb27840f3bf04022d21b654a35f58e15407183aeb16f3b41aa053446/orjson-3.11.5.tar.gz", hash = "sha256:82393ab47b4fe44ffd0a7659fa9cfaacc717eb617c93cde83795f14af5c2e9d5", size = 5972347, upload-time = "2025-12-06T15:55:39.458Z" }
 
 [[package]]
 name = "osmnx"
@@ -6462,11 +6624,11 @@ wheels = [
 
 [[package]]
 name = "python-multipart"
-version = "0.0.10"
+version = "0.0.22"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f9/29/0e5c896ec896b4e501bafa80ab555bbf3bcb0d720e9e33f908179aeb1a61/python_multipart-0.0.10.tar.gz", hash = "sha256:46eb3c6ce6fdda5fb1a03c7e11d490e407c6930a2703fe7aef4da71c374688fa", size = 34619, upload-time = "2024-09-21T14:14:00.291Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/01/979e98d542a70714b0cb2b6728ed0b7c46792b695e3eaec3e20711271ca3/python_multipart-0.0.22.tar.gz", hash = "sha256:7340bef99a7e0032613f56dc36027b959fd3b30a787ed62d310e951f7c3a3a58", size = 37612, upload-time = "2026-01-25T10:15:56.219Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b8/d7/1d8acecc4621aa2b70fca28c1a651e02d936152e77d6be07d00601b31cf3/python_multipart-0.0.10-py3-none-any.whl", hash = "sha256:2b06ad9e8d50c7a8db80e3b56dab590137b323410605af2be20d62a5f1ba1dc8", size = 22680, upload-time = "2024-09-21T14:13:59.049Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/d0/397f9626e711ff749a95d96b7af99b9c566a9bb5129b8e4c10fc4d100304/python_multipart-0.0.22-py3-none-any.whl", hash = "sha256:2b2cd894c83d21bf49d702499531c7bafd057d730c201782048f7945d82de155", size = 24579, upload-time = "2026-01-25T10:15:54.811Z" },
 ]
 
 [[package]]
@@ -6684,7 +6846,7 @@ name = "questionary"
 version = "2.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "prompt-toolkit", marker = "sys_platform != 'emscripten'" },
+    { name = "prompt-toolkit", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/84/d0/d73525aeba800df7030ac187d09c59dc40df1c878b4fab8669bdc805535d/questionary-2.0.1.tar.gz", hash = "sha256:bcce898bf3dbb446ff62830c86c5c6fb9a22a54146f0f5597d3da43b10d8fc8b", size = 24726, upload-time = "2023-09-08T12:19:03.316Z" }
 wheels = [
@@ -7724,28 +7886,90 @@ wheels = [
 name = "shiny"
 version = "1.1.0"
 source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.10.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.10.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.10.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.10.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.11.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.11.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.11.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.11.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version == '3.12.*' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version == '3.12.*' and sys_platform == 'emscripten'",
+    "python_full_version >= '3.13' and sys_platform == 'darwin'",
+    "python_full_version >= '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux'",
+    "python_full_version >= '3.13' and platform_machine != 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and sys_platform == 'emscripten'",
+]
 dependencies = [
-    { name = "appdirs" },
-    { name = "asgiref" },
-    { name = "click", marker = "sys_platform != 'emscripten'" },
-    { name = "htmltools" },
-    { name = "linkify-it-py" },
-    { name = "markdown-it-py" },
-    { name = "mdit-py-plugins" },
-    { name = "packaging" },
-    { name = "prompt-toolkit", marker = "sys_platform != 'emscripten'" },
-    { name = "python-multipart" },
-    { name = "questionary", marker = "sys_platform != 'emscripten'" },
+    { name = "appdirs", marker = "python_full_version >= '3.10'" },
+    { name = "asgiref", marker = "python_full_version >= '3.10'" },
+    { name = "click", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
+    { name = "htmltools", version = "0.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "linkify-it-py", marker = "python_full_version >= '3.10'" },
+    { name = "markdown-it-py", marker = "python_full_version >= '3.10'" },
+    { name = "mdit-py-plugins", marker = "python_full_version >= '3.10'" },
+    { name = "packaging", marker = "python_full_version >= '3.10'" },
+    { name = "prompt-toolkit", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
+    { name = "python-multipart", marker = "python_full_version >= '3.10'" },
+    { name = "questionary", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
     { name = "setuptools", marker = "python_full_version >= '3.12'" },
-    { name = "starlette" },
-    { name = "typing-extensions" },
-    { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
-    { name = "watchfiles", marker = "sys_platform != 'emscripten'" },
-    { name = "websockets" },
+    { name = "starlette", marker = "python_full_version >= '3.10'" },
+    { name = "typing-extensions", marker = "python_full_version >= '3.10'" },
+    { name = "uvicorn", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
+    { name = "watchfiles", marker = "python_full_version >= '3.10' and sys_platform != 'emscripten'" },
+    { name = "websockets", marker = "python_full_version >= '3.10'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/05/5e/1cf0d9468b393a7745994cd600eaf21ad26a91da18f4ec01cc65195cf3b2/shiny-1.1.0.tar.gz", hash = "sha256:7a82338e72486e488c67b7a6230303648ae8ea14c656520f33fc44355a477a59", size = 5069195, upload-time = "2024-09-03T19:25:57.33Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/80/86/23d7367068892af17086ac9d3e8fe04bef641f2ea09d4a93974836501b3e/shiny-1.1.0-py3-none-any.whl", hash = "sha256:dd747a390c91f8335be2dc2188c5a27d23f144287b55ccc1f127357da1eee83e", size = 4290377, upload-time = "2024-09-03T19:25:55.406Z" },
+]
+
+[[package]]
+name = "shiny"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.10' and sys_platform == 'emscripten'",
+]
+dependencies = [
+    { name = "asgiref", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "htmltools", version = "0.6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "linkify-it-py", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "markdown-it-py", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "mdit-py-plugins", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "narwhals", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "orjson", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "packaging", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "platformdirs", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "shinychat", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "starlette", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "websockets", marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/09/00/588d12aaeb1179bcbb20d5841a6db722d1c01c922858bbbb49de58ea03c7/shiny-1.5.0.tar.gz", hash = "sha256:6a07b5057db4471a804b5f915def5db9eeec5ce0cc45d58ee2e174324c5471e0", size = 4905968, upload-time = "2025-09-11T22:26:56.495Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/ac/1d0da6abb068ce31207bd597c9b8a6bd623aa561142cc67eeea5160518d8/shiny-1.5.0-py3-none-any.whl", hash = "sha256:97349fddd2212abaf588548f023b07944e4095fee5bc2c103ff53308ac472806", size = 3924490, upload-time = "2025-09-11T22:26:54.506Z" },
+]
+
+[[package]]
+name = "shinychat"
+version = "0.2.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "htmltools", version = "0.6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+    { name = "shiny", version = "1.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform == 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a3/c6/6887a3618842e65794e5dcfb345825ccd43d58c56fefa9d31286d8e14d16/shinychat-0.2.8.tar.gz", hash = "sha256:d27f28ddf1d512a05ef2cc2f0cffbb75b5b6e3157d5e3690ce4e63d18bfa7492", size = 547318, upload-time = "2025-09-11T20:13:20.367Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/01/8658eaffa920f4c621f05acc42ea98248147706079287b3a7ab4e47e1ece/shinychat-0.2.8-py3-none-any.whl", hash = "sha256:6742a2354257280458269a8b5675f1254e5583be34b6eb1a626de44c0323286a", size = 561057, upload-time = "2025-09-11T20:13:18.683Z" },
 ]
 
 [[package]]
@@ -7911,7 +8135,8 @@ dependencies = [
     { name = "ipyvue" },
     { name = "ipyvuetify" },
     { name = "ipywidgets" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "jupyter-client" },
     { name = "jupyter-server" },
     { name = "markdown" },
@@ -7964,7 +8189,8 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "catalogue" },
     { name = "cymem" },
-    { name = "jinja2" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10' or sys_platform == 'emscripten'" },
+    { name = "jinja2", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' and sys_platform != 'emscripten'" },
     { name = "langcodes" },
     { name = "murmurhash" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -8585,7 +8811,7 @@ resolution-markers = [
 dependencies = [
     { name = "filelock", marker = "python_full_version >= '3.10'" },
     { name = "fsspec", marker = "python_full_version >= '3.10'" },
-    { name = "jinja2", marker = "python_full_version >= '3.10'" },
+    { name = "jinja2", version = "3.1.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "networkx", marker = "python_full_version >= '3.10'" },
     { name = "nvidia-cublas-cu12", marker = "python_full_version >= '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "nvidia-cuda-cupti-cu12", marker = "python_full_version >= '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux'" },
