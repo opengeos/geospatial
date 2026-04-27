@@ -57,7 +57,7 @@ plotly
 # proplot
 # psycopg2
 # pydeck
-pygis >=0.7.0
+pygis >=0.10.2
 pyntcloud
 pyogrio
 pyproj
