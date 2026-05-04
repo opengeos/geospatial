@@ -33,7 +33,7 @@ ipygany
 ipyleaflet
 # keplergl
 laspy
-leafmap>=0.47.2
+leafmap>=0.62.0
 # lidar
 localtileserver
 # lonboard
