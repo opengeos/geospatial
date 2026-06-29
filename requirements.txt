@@ -18,7 +18,7 @@ eemont
 eoreader
 fiona
 folium
-geemap>=0.35.0
+geemap>=0.37.2
 # gemgis
 geoalchemy2
 geocube
