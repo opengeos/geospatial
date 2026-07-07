@@ -15,7 +15,7 @@ jobs:
             fail-fast: false
             matrix:
                 config:
-                    - { os: macOS-latest, py: "3.12" }
+                    - { os: macOS-latest, py: "3.13" }
         env:
             SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
         steps:
@@ -24,7 +24,7 @@ jobs:
             - name: Install uv
               uses: astral-sh/setup-uv@v7
               with:
-                  version: "0.4.12"
+                  version: "0.11.27"
                   enable-cache: false
 
             - name: Set up Python ${{ matrix.config.py }}
