@@ -2806,7 +2806,7 @@ requires-dist = [
     { name = "mss" },
     { name = "netcdf4" },
     { name = "networkx" },
-    { name = "numba", specifier = ">=0.60" },
+    { name = "numba", specifier = ">=0.61" },
     { name = "odc-stac" },
     { name = "osmnx" },
     { name = "overturemaps" },
