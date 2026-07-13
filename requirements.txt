@@ -48,7 +48,7 @@ mss
 netcdf4
 networkx
 # numba floor guards against ancient numba/llvmlite that lack Python 3.13 wheels (see #153)
-numba>=0.61
+numba>=0.66.0
 odc-stac
 osmnx
 overturemaps
